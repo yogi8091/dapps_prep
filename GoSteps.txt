@@ -1,0 +1,21 @@
+Path Setting :
+***********************************************
+  export GOPATH=/home/username/HYPELEDGE/GO/work
+  export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+
+Create Directories :
+***********************************************
+  mkdir /home/username/HYPELEDGE/GO/work
+  cd GO/
+  mkdir -p work/src/github.com/user/hello
+
+Write Code :
+***********************************************
+  vim hello.go
+
+Build and Test :
+***********************************************
+  go  install github.com/user/hello/
+  sudo $GOPATH/bin/hello
+
+
