@@ -1,0 +1,50 @@
+Packages 
+*********************************************************************
+   sudo apt-get update && sudo apt-get -y upgrade
+   sudo apt-get -y install curl git vim build-essential 
+   
+Install NodeJs
+*********************************************************************
+   curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -  
+   sudo apt-get install -y nodejs
+   sudo npm install -g express
+
+Install Truffle
+*********************************************************************
+   sudo npm install -g truffle
+
+Install testrpc
+*********************************************************************
+   sudo npm install -g ethereumjs-testrpc   
+   
+Launch testrpc
+*********************************************************************
+   testrpc -m "Your browser seedwords for metamask"
+
+
+Install Webpack
+*********************************************************************
+   npm install -g webpack
+   
+
+Install Go
+*********************************************************************
+  Install Go1.9 
+  curl -O https://storage.googleapis.com/golang/go1.11.2.linux-amd64.tar.gz
+  tar -xvf go1.11.2.linux-amd64.tar.gz
+  sudo mv go /usr/local
+  sudo nano ~/.profile
+  export GOPATH=$HOME/work
+  export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+
+
+Install npms and dockers
+*********************************************************************
+  sudo npm install npm@5.6.0 -g
+  sudo apt-get update
+  sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+  sudo apt-get update
+  sudo apt-get install docker-ce
+
